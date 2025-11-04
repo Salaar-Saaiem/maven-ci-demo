@@ -15,23 +15,23 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh 'mvn clean install'
+                bat 'mvn clean install'
             }
         }
 
         stage('Test') {
             steps {
-                sh 'mvn test'
+                bat 'mvn test'
             }
         }
     }
 
     post {
         success {
-            echo 'Build and tests completed successfully!'
+            echo '✅ Build and tests completed successfully!'
         }
         failure {
-            echo 'Build failed. Check logs for errors.'
+            echo '❌ Build failed. Check logs for errors.'
         }
     }
 }
