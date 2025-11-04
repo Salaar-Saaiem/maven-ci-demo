@@ -1,2 +1,3 @@
 # maven-ci-demo
-Created by Saaiem Salaar
+Created by the one & only
+Saaiem Salaar
